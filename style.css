@@ -3,65 +3,247 @@
     padding: 0;
     margin: 0;
 }
+#header
+{
+    background-image: url(img/banner.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+.navbar-nav li a
+{
+    float: right;
+    color: #fff !important;
+}
+.navbar-brand img
+{
+    width: 150px;
+    margin-left: 30px;
+}
+.navbar-toggler
+{
+    border: none !important;
+    outline: none !important;
+}
+nav .fa-bars
+{
+    color: #fff;
+    font-size: 26px;
+}
 
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/banner1.jpg); 
+
+/*-------------------Wellcome Text--------------*/
+
+.wellcome
+{
+    padding: 50px 100px;
+    margin-top: -140px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+}
+.wellcome .home-btn
+{
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #013f7e;
+}
+.wellcome .home-btn:hover
+{
+    color: #fff;
+}
+.wellcome .btn:focus
+{
+    box-shadow: none;
+}
+
+
+/*---------About Us-----------*/
+
+#about
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#about .col-md-6
+{
+    padding: 20px 10px;
+}
+#about .h3
+{
+    margin: 20px auto;
+}
+
+
+
+/*-----------Services-------------*/
+
+#services
+{
+    background-color: #efefef;
+    padding-right: 80px;
+    padding-bottom: 80px;
+}
+#services .col-md-4
+{
+    padding: 20px;
+}
+#services .col-md-4 h4
+{
+    padding: 5px;
+}
+#services .col-md-4 img
+{
+    width: 50px;
+}
+#services .col-md-4 p
+{
+    padding: 5px;
+    text-align: justify;
+}
+
+/*-----------Features-------------*/
+
+#features
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/feature-background.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 20px;
-    text-align: center;
-    color: #ffff;
+    color: #fff;
 }
-.header img
+#features .col-md-6
 {
-    width: 170px;
+    padding: 20px;
+}
+.feature-box
+{
+    height: 120px;
+}
+.feature-box .feature-left
+{
+    height: 120px;
+    width: 20%;
     float: left;
 }
-.login-btn
+.feature-box .feature-left .fas
 {
-    width: 100px;
-    padding: 8px 0;
-    outline: none !important;
-    border: 2px solid #ffff;
-    border-radius: 50px;
-    background-color: transparent;
-    color: #ffff;
-    float: right;
+    padding-top: 13px;
+    font-size: 50px;
 }
-.header h1
+.feature-box .feature-right
 {
-    padding-top: 200px;
-    padding-bottom: 0;
-    font-size: 55px;
+    height: 120px;
+    width: 80%;
+    float: left;
 }
-.header p
+.feature-box .feature-right h4
 {
-    margin: 18px 0;
+    padding-top: 10px;
+    padding-left: 15px;
+    text-align: left;
 }
-.input-group
+.feature-box .feature-right p
 {
-    width: 90% !important;
-    max-width: 500px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+
+/*---------------Testimonials-----------------*/
+
+#testimonials
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#testimonials .col-md-4
+{
+    padding: 10px 30px;
+}
+#testimonials img
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: -30px;
+    margin-top: -40px;
+    border: 5px solid #fff;
+    margin-bottom: 30px;
+}
+.review
+{
+    font-size: 16px;
+    padding: 10px 10px 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+}
+.review .fa-twitter
+{
+    color: #013f7e;
+}
+#testimonials span
+{
+    color: #013f7e;
+    font-weight: 600;
+    font-size: 18px;
+}
+#testimonials h1
+{
+    margin-bottom: 20px;
+    color: #013f7e;
+}
+#testimonials p
+{
+    padding-bottom: 20px;
+}
+#testimonials .middle
+{
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+
+/*--------------Subscribe------------------*/
+
+.subscribe
+{
+    padding: 50px 20px;
+    background-color: #013f7e;
+    position: relative;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+    margin-bottom: -160px;
+}
+.subscribe h3, .subscribe p
+{
+    color: #fff;
+}
+.subscribe .input-group
+{
     border-radius: 30px;
-    background: #ffff;
-    margin: auto;
-    padding: 2px;
+    background: #fff;
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 5px;
 }
-.form-control
+.subscribe .form-control
 {
-    border: 0 !important;
-    border-radius: 30px !important;
-    margin: 2px;
-    box-shadow: none !important;
+    border: none;
+    background: transparent;
 }
-.input-group-text-btn
+.subscribe .form-control:focus
+{
+    box-shadow: none;
+    background: transparent;
+}
+.subscribe .input-group-text-btn
 {
     width: 100px;
     height: 40px;
-    background-image: linear-gradient(#00ff7e,#1f3d90);
+    background-image: linear-gradient(to right, #1c03b5, #5c8bef);
     border: 0 !important;
     color: #ffff !important;
     padding: 0 25px !important;
@@ -70,209 +252,54 @@
 }
 
 
+/*---------------Footer Section-----------------*/
 
-/*features*/
-
-
-.features
+#footer
 {
-    padding: 100px 0;
-}
-h1
-{
-    text-align: center;
-    padding-bottom: 30px;
-}
-.feature-img img
-{
-    width: 100%;
-}
-.price
-{
-    width: 50px;
-    height: 50px;
-    background: #ff5722;
-    color: #ffff;
-    font-weight: 600;
-    border-radius: 50%;
-    padding: 10px;
-    box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
-    position: absolute;
-    left: 25px;
-    bottom: -25px;
-}
-.feature-img
-{
-    position: relative;
-}
-.rating
-{
-    padding: 3px;
-    float: right;
-    background: #ffff;
-    bottom: -1px;
-    right: 0;
-    position: absolute;
-}
-.features .fas 
-{
-    font-size: 15px;
-    color: #ff5722;
-}
-.features .far
-{
-    font-size: 15px;
-    color: #ff5722;
-}
-.feature-details
-{
-    padding: 20px;
-    text-align: justify;
-}
-.feature-details h4
-{
-    font-weight: 600;
-    margin-top: 20px;
-}
-.feature-details .far
-{
-    margin-right: 5px;
-}
-.feature-box
-{
-    box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
-    margin-bottom: 30px;
-}
-.gallery
-{
-    padding: 100px 0;
-    background: #efefef;
-}
-.gallery-box img
-{
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-.gallery-box img:hover
-{
-    transform: scale(1.1);
-}
-.gallery-box h4
-{
-    display: block;
-    color: #ffff;
-    font-size: 20px;
-    text-shadow: -2px 2px 2px #000;
-    text-align: center;
-    font-weight: 600;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.gallery-box
-{
-    position: relative;
-    margin-bottom: 30px;
-}
-.banner
-{
-    min-height: 100vh;
-    height: 80%;
-    background-image: url(img/banner2.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 14%;
-}
-.banner-highlights
-{
-    padding: 70px 0;
-    background: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    color: #ffff;
-}
-.booking-btn
-{
-    width: 120px;
-    padding: 8px 0;
-    outline: none !important;
-    border: 2px solid #ffff;
-    border-radius: 50px;
-    background-color: transparent;
-    color: #ffff;
-    margin-top: 20px;
-}
-.users-feedback
-{
-    padding: 100px 0;
-}
-.user-review
-{
-    text-align: center;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 100, 0.2);
-    padding-bottom: 50px;
-}
-.user-review p
-{
-    padding: 50px 10px 10px 10px;
-}
-.users-feedback img
-{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    position: relative;
-    margin: -30px 0 20px 40%;
-}
-
-.footer
-{
-   padding: 100px 20px 15px;
-   background: linear-gradient(#2d557d,#9610fd);
-   color: #fff; 
+    margin-top: 80px;
+    padding: 100px;
+    background-color: #efefef;
+    color: #013f7e;
 }
 .footer-logo
 {
     width: 150px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 15px;
 }
-.footer h4
+#footer h1
 {
+    font-size: 15px;
     text-align: left;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 25px;
 }
-.footer p
+#footer p
 {
-    text-align: justify;
     font-size: 12px;
-    padding-right: 35px;
+    text-align: left;
 }
-.footer .row .fab 
+#footer .city
+{
+    margin-left: 37px;
+}
+#footer .fas
 {
     padding-right: 20px;
     font-size: 15px;
 }
-.footer .row .fas 
+#footer .fab
 {
     padding-right: 20px;
     font-size: 15px;
 }
-.footer hr
+#footer hr
 {
     margin-top: 10px;
-    background: #efefef;
 }
-.fa-heart
+#footer .copyright
 {
-    margin: 0 5px;
-    color: #f44336;
-}
-.footer .copyright 
-{
+    margin-bottom: -80px;
     text-align: center;
+    font-size: 15px;
 }
